@@ -2,18 +2,19 @@
 import Modal from "../components/Modal.svelte";
 
 </script>
+
 <Modal
-        buttonName="Модалное окно"
+        buttonName="Модальное окно"
         buttonColor="bg-green-500"
         let:handle={handleClose}>
         <nu-block >
-				<nd-theme color="#333" background-color="#fff" special-color="#3366ff" border-color="#ddd">
-				</nd-theme>
-				<nd-theme name="primary" color="#1885d9" background-color="#fff" special-color="#1885d9" shadow-opacity=".2">
-				</nd-theme>
+				<nu-theme  color="#333" background-color="#fff" special-color="#3366ff" border-color="#ddd">
+				</nu-theme>
+				<nu-theme  name="primary" color="#1885d9" background-color="#fff" special-color="#1885d9" shadow-opacity=".2">
+				</nu-theme>
 				<nu-card shadow border="1px" depth theme="primary">
 					<nu-flex flow="column" padding="2|2|1" rows="repeat(3,1fr)" cols="200px"  gap="1">
-						<nu-block>
+						<nu-block >
 							<h1>Header</h1>
 							<nu-separator></nu-separator>
 						</nu-block>

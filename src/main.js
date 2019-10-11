@@ -1,8 +1,7 @@
 import App from './App.svelte';
-import '../nude/nude.pack.css'
-import "../nude/nude.pack.js";
 import feather from  "../icons/feather.js";
 import "../assets/style.css"
+import 'numl';
 const app = new App({
 	target: document.body,
 	props: {

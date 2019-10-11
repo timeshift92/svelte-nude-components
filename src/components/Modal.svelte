@@ -1,5 +1,5 @@
 <script>
-import { fade } from "svelte/transition";
+  import { fade } from "svelte/transition";
   let showModal = false;
   export let buttonColor = "bg-blue-500";
   export let buttonName = "Добавить";
@@ -15,29 +15,29 @@ import { fade } from "svelte/transition";
     return clr.join("-");
   };
 
-	
-let height;
-let width;
+
+  let height;
+  let width;
 </script>
+
+
 <slot name="button">
-  <nu-btn
-    class="{buttonColor} hover:{buttonHover()} text-white font-bold py-2 px-4
-    rounded"
-    on:click={() => (showModal = true)}>
+  <nu-btn class="{buttonColor} hover:{buttonHover()} text-white font-bold py-2 px-4 rounded" on:click={()=> (showModal =
+    true)}>
     {buttonName}
   </nu-btn>
 </slot>
 
-<svelte:window  bind:innerHeight={height} bind:innerWidth={width}/>
+<svelte:window bind:innerHeight={height} bind:innerWidth={width} />
 {#if showModal}
 
-<nd-theme name="modal" color="#333" background-color="#00000057" special-color="#3366ff" border-color="#ddd">
-</nd-theme>
-<nu-flex content="center" items="center" class="inset-0 fixed z-10"   width="{width}px" height="{height}px">
-<nu-block  on:click='{() => showModal = false}'  width="100%" height="100%"   theme="modal">
-</nu-block>
-<nu-block class="absolute z-10" >
-		<nu-btn class="float-right pb-1" on:click={() => (showModal = false)}>
+
+
+<nu-flex nu-themes="default minor primary" content="center" theme="primary" items="center" class="inset-0 fixed z-10"   width="{width}px" height="{height}px">
+    <nu-theme color="rgba(67.5%, 8.6%, 21.3%, 100%)" background-color="#fff" border-color="#f23" special-color="rgba(0,0,0,1)"></nu-theme>
+<nu-block  on:click='{() => showModal = false}'  width="100%" height="100%"></nu-block>
+<nu-block class="absolute z-10 " >
+		<nu-btn  style="top: 15px; right: 15px;"  mod="transparent"  width="2px" height="2px" border="none" class="float-right m-0 p-0  z-10 hover:text-red-200" on:click={() => (showModal = false)}>
       X
     </nu-btn>
     <slot handle={handleClose} />
