@@ -1883,10 +1883,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-numl@^0.6.27:
-  version "0.6.27"
-  resolved "https://registry.yarnpkg.com/numl/-/numl-0.6.27.tgz#76e7ff3ece5dc055fcbdb0ea10415fc01a82ab8f"
-  integrity sha512-CKeX/Ytw2rumgrmNWJtdcH+y8AAp7U9WFd7GEvJrTmRW6FZgOx4B05uEVjTH8VTNUg2fIRG+64fpurFZkQaHLQ==
+numl@^0.6.29:
+  version "0.6.29"
+  resolved "https://registry.yarnpkg.com/numl/-/numl-0.6.29.tgz#d0b8f8e51717bb8c4b963ebeccd5b725dfe43241"
+  integrity sha512-T5zogBPd2c0Ii7pzfM75OqyQq7Xmxc7OvPi3so6oYYCTDu4DYn94rP+AuPmAng3wTSTRB06V4KwvJ0FocPyzww==
 
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"

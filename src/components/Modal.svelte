@@ -1,5 +1,4 @@
 <script>
-  import { fade } from "svelte/transition";
   let showModal = false;
   export let buttonColor = "bg-blue-500";
   export let buttonName = "Добавить";
@@ -14,7 +13,6 @@
 
     return clr.join("-");
   };
-
 
   let height;
   let width;
@@ -34,12 +32,12 @@
 
 
 <nu-flex nu-themes="default minor primary" content="center" theme="primary" items="center" class="inset-0 fixed z-10"   width="{width}px" height="{height}px">
-    <nu-theme color="rgba(67.5%, 8.6%, 21.3%, 100%)" background-color="#fff" border-color="#f23" special-color="rgba(0,0,0,1)"></nu-theme>
+    <nu-theme color="rgba(67.5%, 8.6%, 21.3%, 100%)" background-color="#fff"  special-color="rgba(0,0,0,1)"></nu-theme>
 <nu-block  on:click='{() => showModal = false}'  width="100%" height="100%"></nu-block>
 <nu-block class="absolute z-10 " >
-		<nu-btn  style="top: 15px; right: 15px;"  mod="transparent"  width="2px" height="2px" border="none" class="float-right m-0 p-0  z-10 hover:text-red-200" on:click={() => (showModal = false)}>
+		<!-- <nu-btn  style="top: 15px; right: 15px;"  mod="transparent"  width="2px" height="2px" border="none" class="float-right m-0 p-0  z-10 hover:text-red-200" on:click={() => (showModal = false)}>
       X
-    </nu-btn>
+    </nu-btn> -->
     <slot handle={handleClose} />
 	</nu-block>
 </nu-flex>

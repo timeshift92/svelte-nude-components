@@ -18,7 +18,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
     "cssnano": "^4.1.10",
-    "numl": "^0.6.27",
+    "numl": "^0.6.29",
     "sirv-cli": "^0.4.4",
     "tailwindcss-transforms": "^2.2.0"
   },
