@@ -1,6 +1,5 @@
 import App from './App.svelte';
-import feather from  "../icons/feather.js";
-import "../assets/style.css"
+// import feather from  "../icons/feather.js";
 import 'numl';
 const app = new App({
 	target: document.body,
@@ -9,18 +8,18 @@ const app = new App({
 	}
 });
 
-if(Nude){
-  Nude.iconLoader = function iconLoader(name) {
-  const data = feather.icons[name];
-  const el = document.createElement('svg');
-  for (let attr in data.attrs) {
-    el.setAttribute(attr, data.attrs[attr]);
-  }
-  el.innerHTML = data.contents;
-  return Promise.resolve(el.outerHTML);
-};
+// if(Nude){
+//   Nude.iconLoader = function iconLoader(name) {
+//   const data = feather.icons[name];
+//   const el = document.createElement('svg');
+//   for (let attr in data.attrs) {
+//     el.setAttribute(attr, data.attrs[attr]);
+//   }
+//   el.innerHTML = data.contents;
+//   return Promise.resolve(el.outerHTML);
+// };
 
-	Nude.init()
-}
+// 	Nude.init()
+// }
 
 export default app;

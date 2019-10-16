@@ -18,16 +18,7 @@
       background-color="#fff"
       special-color="#1885d9"
       shadow-opacity=".2" />
-    <nu-btn
-      style="top: 15px; right: 15px;"
-      mod="transparent"
-      width="2px"
-      height="2px"
-      border="none"
-      class="float-right m-0 p-0 z-10 hover:text-red-200"
-      on:click={() => handleClose(false)}>
-      X
-    </nu-btn>
+
     <nu-card shadow border="1px" depth theme="primary">
       <nu-flex
         flow="column"
@@ -53,9 +44,14 @@
             </nu-block>
             <input />
           </nu-input>
-		  <nu-block gap="1" height="10px"></nu-block>
+          <nu-block gap="1" height="10px" />
           <nu-btn theme="!primary" grow="0" on:click={() => handleClose()}>
             Submit
+          </nu-btn>
+          <nu-btn
+            mod="transparent"
+            on:click={() => handleClose(false)}>
+            Cancel
           </nu-btn>
         </nu-btn-group>
       </nu-flex>
