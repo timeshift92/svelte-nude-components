@@ -17,7 +17,7 @@
     "svelte": "^3.12.1"
   },
   "dependencies": {
-    "numl": "^0.6.30",
+    "numl": "^0.6.31",
     "sirv-cli": "^0.4.4"
   },
   "scripts": {

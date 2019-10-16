@@ -1622,10 +1622,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-numl@^0.6.30:
-  version "0.6.30"
-  resolved "https://registry.yarnpkg.com/numl/-/numl-0.6.30.tgz#853047220a4e51bfe3c84044dc67376609951dc7"
-  integrity sha512-PgNXe604jkWStv1wQqKgG9UJnAwG7aPNPi6tO6q8CPg+thNagMvud6NUKhS90uunRxgac2aifd0+4U3HqeAh0Q==
+numl@^0.6.31:
+  version "0.6.31"
+  resolved "https://registry.yarnpkg.com/numl/-/numl-0.6.31.tgz#990b297651f300d4b251e21ef268a50b8cfdbc07"
+  integrity sha512-zBLEqqUhsKxFjeQQJMQQsfn9z9o3qs6tiWpLgGvTiVwvt5dHd5gNrSYK+htjysjiy9kBgcIOv2ZTxiypcnvdrg==
 
 object-assign@^4.1.0:
   version "4.1.1"
