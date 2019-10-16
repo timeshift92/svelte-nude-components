@@ -29,13 +29,15 @@
 
 <svelte:window bind:innerHeight={height} bind:innerWidth={width} />
 {#if showModal}
-  <nu-card
+  <nu-block
+    style="position:fixed"
+    position="fixed"
     background="rgba(0,0,0,.5)"
     place="cover"
     on:click={() => (showModal = false)}
     z="front"
     shadow />
-  <nu-block place="inside" z="front" shadow>
+  <nu-block style="position:fixed" place="inside" z="front" shadow>
     <slot handle={handleClose} />
   </nu-block>
 {/if}
