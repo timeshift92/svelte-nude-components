@@ -1,12 +1,15 @@
 {
   "html.customData": ["../numl.json"],
  
- "prettier.printWidth": 20,
- 
+ "prettier.printWidth": 120,
+  
   "[svelte]":{
     "editor.formatOnSave": true,
     
+    
   },
+  
+
   "json.schemas": [
     {
       "fileMatch": ["../numl.json"],

@@ -1,5 +1,5 @@
 <script>
-  import {Modal} from "../components";
+  import { Modal } from "../components";
 </script>
 
 <Modal
@@ -7,10 +7,24 @@
   buttonColor="bg-green-500"
   let:handle={handleClose}>
   <nu-block>
-    <nu-theme color="#333" background-color="#fff" special-color="#3366ff" border-color="#fff123" />
-     <nu-theme name="primary" color="#1885d9" background-color="#fff" special-color="#1885d9" shadow-opacity=".2" />
+    <nu-theme
+      color="#333"
+      background-color="#fff"
+      special-color="#3366ff"
+      border-color="#fff123" />
+    <nu-theme
+      name="primary"
+      color="#1885d9"
+      background-color="#fff"
+      special-color="#1885d9"
+      shadow-opacity=".2" />
     <nu-card shadow border="1px" depth theme="primary">
-      <nu-flex flow="column" padding="2|2|1" rows="repeat(3,1fr)" cols="200px" gap="1">
+      <nu-flex
+        flow="column"
+        padding="2|2|1"
+        rows="repeat(3,1fr)"
+        cols="200px"
+        gap="1">
         <nu-block>
           <h1>Header</h1>
           <nu-separator />
@@ -33,9 +47,7 @@
           <nu-btn theme="!primary" grow="0" on:click={() => handleClose()}>
             Submit
           </nu-btn>
-          <nu-btn
-            mod="transparent"
-            on:click={() => handleClose(false)}>
+          <nu-btn mod="transparent" on:click={() => handleClose(false)}>
             Cancel
           </nu-btn>
         </nu-btn-group>
